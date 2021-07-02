@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd">
+	<flow name="deleteFlow" doc:id="d7f26f70-a3a4-4aef-b232-bf731557d399" >
+		<wsc:consume operation="DeleteEmployee" doc:name="Consume" doc:id="c315a2a2-34d7-4a67-a138-912b96addc82" config-ref="Web_Service_Consumer_Config"/>
+	</flow>
+</mule>

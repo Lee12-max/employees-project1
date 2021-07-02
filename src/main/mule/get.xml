@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd">
+	<flow name="getFlow" doc:id="8fa941e7-ed33-4151-a5f1-04238e69b1d0" >
+		<wsc:consume operation="GetEmployee" doc:name="Consume" doc:id="610b4f30-0c8f-4e56-ba88-31511cf79647" config-ref="Web_Service_Consumer_Config"/>
+	</flow>
+</mule>
