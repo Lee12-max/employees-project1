@@ -28,7 +28,7 @@ ns ns0 http://www.cdi.com/employees
 		<ee:transform doc:name="Transform Message" doc:id="5e06adf4-15a8-4950-a94a-8c7128f58ae5" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
-output application/json
+output application/xml
 ---
 payload.body.UpdateEmployeeResponse
 ]]></ee:set-payload>
