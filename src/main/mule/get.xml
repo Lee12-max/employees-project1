@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<ee:transform doc:name="Transform Message" doc:id="9e9c366a-faea-4a28-9e6d-dac0e3e9b292" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
-output application/json
+output application/xml
 ns ns0 http://www.cdi.com/employees
 ---
 {
@@ -20,7 +20,6 @@ ns ns0 http://www.cdi.com/employees
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<wsc:consume operation="GetEmployee" doc:name="Consume" doc:id="610b4f30-0c8f-4e56-ba88-31511cf79647" config-ref="Web_Service_Consumer_Config"/>
 		<ee:transform doc:name="Transform Message" doc:id="fd0230c9-ff07-4072-9cab-9fe9d5a35a46" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0

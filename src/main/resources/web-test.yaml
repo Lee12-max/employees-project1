@@ -1,0 +1,7 @@
+web:
+  location: "http://35.194.51.90:6062/ws/employees.wsdl"
+  service: "EmployeePortService"
+  port: "EmployeePortSoap11"
+  address: "http://35.194.51.90:6062/ws"
+
+
